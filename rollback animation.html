@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right{
+            margin-left: 400px;
+            position: absolute;
+            width: 150px; 
+            height: 150px;}
+            .right:hover{
+            animation: moveAndRotate 7s 2 linear;
+             }
+
+        @keyframes moveAndRotate {
+            0% {
+                transform: translate(0,0) rotate(0deg);
+               }
+            30% {
+                transform: translate(150px,0px) rotate(180deg);
+                }
+            50% {
+                 transform: translate(300px, 0) rotate(360deg);
+                 }
+                }
+                .left{
+                    position: absolute;
+                    width:150px;
+                    height:150px;   
+                    margin-left: 400px;
+                    margin-top:180px ;  
+                }
+                .left:hover{
+                    animation: leftRotate 7s 2 linear;
+
+                }
+                @keyframes leftRotate {
+            0% {
+                transform: translate(0,0) rotate(0deg);
+               }
+            30% {
+                transform: translate(-150px,0px) rotate(-180deg);
+                }
+            50% {
+                 transform: translate(-300px, 0) rotate(-360deg);
+                 }
+                }
+                .bottom{
+                    position: absolute;
+                    width:150px;
+                    height:150px; 
+                    margin-left: 400px;
+                    margin-top: 360px;
+                
+                }
+                .bottom:hover{
+                    animation:bottomRotate 7s 2 linear;
+
+                }
+                @keyframes bottomRotate {
+            0% {
+                transform: translate(0,0) rotate(0deg);
+               }
+            30% {
+                transform: translate(0px,150px) rotate(180deg);
+                }
+            50% {
+                 transform: translate(0px, 300px) rotate(360deg);
+                 }
+                }
+        
+    </style>
+</head>
+<body>
+    <img class="right" src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg">
+    <img class="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaMOmnzsPYj0fCtOooTfvuTtp96ykTMhKwRr8ztec8CbgPqFaBF3aG0Gy42AxC2gUm-WY&usqp=CAU">
+    <img class="bottom" src="https://media.istockphoto.com/id/505239248/photo/humayun-tomb-new-delhi-india.jpg?s=612x612&w=0&k=20&c=UQTU6YOnVsSklzHi34cOhNW5AhsACDxKLiD9--T-3Kg=">
+    
+</body>
+</html>
